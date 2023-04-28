@@ -360,6 +360,16 @@
         </section>
     </main>
     <footer id="footer" class="footer">
+        <div class="goUpBtnWrap" :class="state">
+            <h2 class="hide">상단으로 바로가기</h2>
+            <a href="#" class="goupbtn" @click.prevent="onClickUp">TOP</a>           
+        </div>
+        <div class="fixedBanner" v-if="close">
+            <div>
+                <a href=""><img src="./images/banner-floating_200827.png" alt="30년 노하우로 안심까지"></a>
+                <button @click="onClickClose"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
         <div class="footerWrap">
             <div class="footerWrapTop">
                 <ul>
@@ -418,5 +428,6 @@
     <script src="./js/dominoVisual.js"></script>
     <script src="./js/dominoEvent.js"></script>
     <script src="./js/dominoProducts.js"></script>
+    <script src="./js/dominoFooter.js"></script>
 </body>
 </html>
