@@ -11,6 +11,12 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- VueCDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- JQuery & BxSlider -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- FontAwesome & XEicon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
 <body>
     <a href="#main" class="skip">본문 바로가기</a>
@@ -57,6 +63,133 @@
                         <span>피자를 가져다 드립니다~</span>
                     </a>
                 </div>
+            </div>
+        </section>
+        <section class="mainProductsWrap" id="mainSectionProduct">
+            <div class="mainProductsWrapContainer">
+                <h2>MENU</h2>
+                <ul class="mainProductVisual">
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/c_bacon.jpg" alt="베이컨 피자 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>베이컨체더치즈</h3>
+                                <div>
+                                    <p>L<span>27,900원~</span></p>
+                                    <p>M<span>20,500원~</span></p>
+                                </div>
+                                <p>#베이컨 매니아들의 원 픽</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/c_bulgogi.jpg" alt="불고기 피자 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>리얼불고기</h3>
+                                <div>
+                                    <p>L<span>29,900원~</span></p>
+                                    <p>M<span>22,500원~</span></p>
+                                </div>
+                                <p>#프리미엄 불고기 토핑이 듬뿍</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/c_goguma.jpg" alt="우리고구마 피자 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>우리 고구마</h3>
+                                <div>
+                                    <p>L<span>30,900원~</span></p>
+                                    <p>M<span>23,500원~</span></p>
+                                </div>
+                                <p>#고구마 큐브&무스가 듬뿍!</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/c_potato.jpg" alt="포테이토 피자 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>포테이토</h3>
+                                <div>
+                                    <p>L<span>27,900원~</span></p>
+                                    <p>M<span>20,500원~</span></p>
+                                </div>
+                                <p>#도미노피자 No.1 레전드</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/c_shirimp.jpg" alt="슈퍼슈프림">
+                            </em>
+                            <div class="textWrap">
+                                <h3>슈퍼슈프림</h3>
+                                <div>
+                                    <p>L<span>27,900원~</span></p>
+                                    <p>M<span>20,500원~</span></p>
+                                </div>
+                                <p>#콘과 파인애플의 달콤한 조화</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/p_best.jpg" alt="베스트 콰트로 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>베스트 콰트로</h3>
+                                <div>
+                                    <p>L<span>36,900원~</span></p>
+                                    <p>M<span>29,500원~</span></p>
+                                </div>
+                                <p>#4가지 피자를 한판에</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/c_peper.jpg" alt="페퍼로니 피자 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>페퍼로니</h3>
+                                <div>
+                                    <p>L<span>25,900원~</span></p>
+                                    <p>M<span>18,500원~</span></p>
+                                </div>
+                                <p>#짭짤한 풍미가 일품</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>
+                                <img src="./images/p_black.jpg" alt="블랙앵거스 피자 이미지">
+                            </em>
+                            <div class="textWrap">
+                                <h3>블랙앵거스 스테이크</h3>
+                                <div>
+                                    <p>L<span>35,900원~</span></p>
+                                    <p>M<span>29,500원~</span></p>
+                                </div>
+                                <p>#블랙앵거스 비프에 랍스터볼까지</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="mainEventWrap" id="mainSectionEvent">
@@ -135,5 +268,6 @@
         </div>
     </footer>
     <script src="./js/dominoEvent.js"></script>
+    <script src="./js/dominoProducts.js"></script>
 </body>
 </html>
