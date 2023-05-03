@@ -4,7 +4,7 @@ $('.mainEventSlide').slick({
     arrows:true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    accessibility:false,
+    accessibility:true,
     pauseOnDotsHover:true,
 });
 
