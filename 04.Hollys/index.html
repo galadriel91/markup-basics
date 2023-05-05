@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할리스</title>
+    <!-- Favicon & Xeicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- index.css -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <a href="" class="skip">본문 바로가기</a>
+    <!-- <header class="header">
+        <div class="headerWrap">
+            <h1>
+                <a href="" class="headerPcLogo"><img src="./images/logo.png" alt="로고"></a>
+                <a href="" class="headerMobileLogo"><img src="./images/footerResponsive.png" alt="로고"></a>
+            </h1>
+            <nav class="headerWrapNav">
+                <h2 class="hide">대메뉴</h2>
+                <ul>
+                    <li class="headerNavItem">
+                        <a href="">Menu</a>
+                        <ul class="depth">
+                            <li><a href=""><span>Coffee</span></a></li>
+                            <li><a href=""><span>라떼 · 초콜릿 · 티</span></a></li>
+                            <li><a href=""><span>할리치노 · 빙수</span></a></li>
+                            <li><a href=""><span>스파클링</span></a></li>
+                            <li><a href=""><span>베이커리·스낵MD</span></a></li>
+                            <li><a href=""><span>MD상품</span></a></li>
+                            <li><a href=""><span>MD커피</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="headerNavItem">
+                        <a href="">Mall</a>
+                        <ul class="depth">
+                            <li><a href=""><span>할리스콘</span></a></li>
+                            <li><a href=""><span>할리스카드</span></a></li>
+                            <li><a href=""><span>구매내역</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="headerNavItem">
+                        <a href="">Membership</a>
+                        <ul class="depth">
+                            <li><a href=""><span>스마트오더</span></a></li>
+                            <li><a href=""><span>멤버쉽 혜택안내</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="headerNavItem">
+                        <a href="">Store</a>
+                        <ul class="depth">
+                            <li><a href=""><span>매장검색</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="headerNavItem">
+                        <a href="">Hollys Is</a>
+                        <ul class="depth">
+                            <li><a href=""><span>HOLLYS Coffee</span></a></li>
+                            <li><a href=""><span>할리스 위치 및 연락처</span></a></li>
+                            <li><a href=""><span>채용 안내</span></a></li>
+                            <li><a href=""><span>B2B 사업 소개</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="headerNavItem">
+                        <a href="">Franchise</a>
+                    </li>
+                </ul>
+                <button class="xi-close navCloseBtn"></button>
+            </nav>
+            <div class="headerWrapService">
+                <ul>
+                    <li><a href="" class="loginBtn"><span>LOGIN</span><i class="xi-profile"></i></a></li>
+                    <li class="headerWrapServiceLogin"><a href=""><span>JOIN</span></a></li>
+                    <li><a href=""><span>FIND A STORE</span><i class="xi-maker"></i></a></li>
+                </ul>
+                <button class="xi-bars navOpenBtn"></button>
+            </div>
+        </div>
+    </header> -->
+    <!-- <div class="mainVisual">
+        <h2 class="hide">메인 비쥬얼</h2>
+        <div class="slide">
+            <div>
+                <a href=""><img class="pcImage" src="./images/mainVisual.jpg" alt="딸기 치즈케익 할리치노"></a>
+                <a href=""><img class="mobileImage" src="./images/mobileBanner.jpg" alt="딸기 치즈케익 할리치노"></a>
+            </div>
+            <div>
+                <a href=""><img class="pcImage" src="./images/mainVisual2.jpg" alt="딸기 요거트 꽃카롱 & 딸기 초코 가토"></a>
+                <a href=""><img class="mobileImage" src="./images/mobileBanner2.jpg" alt="딸기 요거트 꽃카롱 & 딸기 초코 가토"></a>
+            </div>
+            <div>
+                <a href=""><img class="pcImage" src="./images/mainVisual3.jpg" alt="딸기 바나나 스무디 & 딸기 듬뿍 라떼"></a>
+                <a href=""><img class="mobileImage" src="./images/mobileBanner3.jpg" alt="딸기 바나나 스무디 & 딸기 듬뿍 라떼"></a>
+            </div>
+            <div>
+                <a href=""><img class="pcImage" src="./images/mainVisual4.jpg" alt="딸기 초코 쏘스윗박스 & 딸기 초코케익 할리치노"></a>
+                <a href=""><img class="mobileImage" src="./images/mobileBanner4.jpg" alt="딸기 초코 쏘스윗박스 & 딸기 초코케익 할리치노"></a>
+            </div>
+            <div>
+                <a href=""><img class="pcImage" src="./images/mainVisual5.png" alt="상콤달콤 진한 딸기"></a>
+                <a href=""><img class="mobileImage" src="./images/mobileBanner5.png" alt="상콤달콤 진한 딸기"></a>
+            </div>
+        </div>
+    </div> -->
+    <!-- <main>
+        <section class="mainAnnounce">
+            <h2 class="hide">공지사항 및 이벤트</h2>
+            <div class="mainAnnounceWrap">
+                <div class="mainAnnounceWrapLeft">
+                    <h3>
+                        <a href="">공지사항</a>
+                    </h3>
+                    <p>
+                        <a href="">개인정보처리방침 변경 안내</a>
+                    </p>
+                </div>
+                <div class="mainAnnounceWrapRight">
+                    <h3>
+                        <a href="">이벤트</a>
+                    </h3>
+                    <p>
+                        <a href="">할리스의 따뜻한 신메뉴 소식</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="mainQuote">
+            <h2 class="hide">할리스커피 소개</h2>
+            <div>
+                <p>Fresh Coffee Romantic Space</p>
+                <p>커피의 즐거움을 만드는 <span>작은 차이의 미학</span></p>
+            </div>
+        </section>
+        <section class="mainBg">
+            <h2 class="hide">할리스 커피 백그라운드 이미지</h2>
+            <div>&nbsp;</div>
+        </section>
+        <section class="mainMenu">
+            <h2>What's New</h2>
+            <div class="mainMenuWrap">
+                <ul class="menuSlide">
+                    <li>
+                        <a href="">
+                            <img src="./images/menuImage.jpg" alt="딸기듬뿍라떼">
+                            <p>딸기 듬뿍 라떼</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/menuImage2.jpg" alt="콜드브루 딜라이트">
+                            <p>콜드브루 딜라이트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/menuImage3.jpg" alt="리스프레또 딜라이트">
+                            <p>리스프레또 딜라이트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/menuImage4.jpg" alt="디카페인 바닐라 라떼">
+                            <p>디카페인 바닐라 라떼</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/menuImage5.jpg" alt="피치 딸기 크러쉬">
+                            <p>피치 딸기 크러쉬</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/menuImage6.jpg" alt="생딸기 주스">
+                            <p>생딸기 주스</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="mainIntro">
+            <h2 class="hide">할리스 커피 소개 문구</h2>
+            <div class="mainIntroWrap">
+                <div class="mainIntroWrapTop">
+                    <div class="mainIntroImage">
+                        <img src="./images/menu1.jpg" alt="할리스 메뉴 사진">
+                    </div>
+                    <div class="mainIntroWord">
+                        <p>
+                            맛있는 할리스 <br/>
+                            커피의 <br/>
+                            특별한 즐거움
+                        </p>
+                        <span>
+                            커피가 주는 즐거움을 고객들이 즐기도록<br/>
+                            매 순간 의미 있는 작은 차이를 만들기 위해 노력합니다.
+                        </span>
+                        <a href="">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="mainIntroWrapBottom">
+                    <div class="mainIntroWord">
+                        <p>
+                            더 다양하게, <br/>
+                            더 즐겁게, <br/>
+                            더 맛있게
+                        </p>
+                        <span>
+                            오직 할리스 커피에서만 맛볼 수 있는 <br/>
+                            특별메뉴로 <br/>
+                            경쟁력 있는 상품을 선보입니다
+                        </span>
+                        <a href="">자세히 보기</a>
+                    </div>
+                    <div class="mainIntroImage">
+                        <img src="./images/menu2.jpg" alt="할리스 메뉴 사진">
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="mainMd">
+            <h2>MD Best</h2>
+            <div class="mainMdWrap">
+                <ul class="mdSlide">
+                    <li>
+                        <a href="">
+                            <img src="./images/mdImage.jpg" alt="리얼벨지안초코라떼">
+                            <p>리얼 벨지안 초코 라떼 30T</p>
+                            <span>20,100원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/mdImage2.jpg" alt="카페라떼">
+                            <p>카페 라떼 30T</p>
+                            <span>16,700원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/mdImage3.jpg" alt="시그니처 아메리카노">
+                            <p>시그니처 아메리카노<br/> 
+                                미니 마일드 100T</p>
+                            <span>20,800원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/mdImage4.jpg" alt="시그니처 아메리카노">
+                            <p>시그니처 아메리카노 <br/>
+                                미니 다크 100T</p>
+                            <span>20,800원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/mdImage5.jpg" alt="콜드 브루 아메리카노 30T">
+                            <p>콜드 브루 아메리카노 30T</p>
+                            <span>19,900원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/mdImage6.jpg" alt="바닐라 딜라이트">
+                            <p>바닐라 딜라이트 30T</p>
+                            <span>6,900원</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="mainSns">
+            <h2 class="mainSnsTitle">#Hollys Live</h2>
+            <ul>
+                <li><a href=""><img src="./images/mainSns-2.png" alt="SNS 이미지"></a></li>
+                <li><a href=""><img src="./images/mainSns-1.png" alt="SNS 이미지"></a></li>
+                <li><a href=""><img src="./images/mainSns-3.jpg" alt="SNS 이미지"></a></li>
+                <li><a href=""><img src="./images/mainSns-4.png" alt="SNS 이미지"></a></li>
+                <li><a href=""><img src="./images/mainSns-5.jpg" alt="SNS 이미지"></a></li>
+                <li><a href=""><img src="./images/mainSns-6.png" alt="SNS 이미지"></a></li>
+                <li><a href=""><img src="./images/mainSns-7.jpg" alt="SNS 이미지"></a></li>
+                <li><a href=""><img src="./images/mainSns-8.png" alt="SNS 이미지"></a></li>
+                <li><a href=""><img src="./images/mainSns-9.jpg" alt="SNS 이미지"></a></li>
+                <li><a href=""><img src="./images/mainSns-10.jpg" alt="SNS 이미지"></a></li>
+            </ul>
+        </section>
+    </main> -->
+    <footer>
+        <div class="footerTop">
+            <ul>
+                <li><a href="javascript:;">개인정보처리방침</a></li>
+                <li><a href="javascript:;">서비스이용약관</a></li>
+                <li><a href="javascript:;">멤버십이용약관</a></li>
+                <li><a href="javascript:;">고객문의</a></li>
+                <li class="responsiveBlock"></li>
+                <li><a href="javascript:;">할리스카드이용약관</a></li>
+                <li><a href="javascript:;">고객설문</a></li>
+                <li><a href="javascript:;">사이트맵</a></li>
+                <li><a href="javascript:;">BI 소개</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <div class="footerBottomWrap">
+                <div class="footerBottomWrapLogo">
+                    <img src="./images/footerLogo.png" alt="할리스커피 로고" class="footerPc">
+                    <img src="./images/footerResponsive.png" alt="할리스커피 로고" class="footerResponsive">
+                </div>
+                <div class="footerBottomWrapInfo">
+                    <p>
+                        <span>법인명: (주) 케이지할리스에프앤비</span>
+                        <span>대표자: 이종현</span>
+                        <span>사업자등록번호 211-87-61044</span>
+                        <br class="brick"/>
+                        <span>통신판매업: 제2019-서울종로-0193호</span>
+                    </p>
+                    <p>
+                        <span>주소 : 서울특별시 중구 통일로 92, 9층(순화동, 케이지타워)</span>
+                        <br class="brick"/>
+                        <span>대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229)</span>
+                    </p>
+                    <p>
+                        <span>COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.</span>
+                    </p>
+                </div>
+                <div class="footerBottomWrapSns">
+                    <ul>
+                        <li>Follow us</li>
+                        <li><a href="https://www.instagram.com/hollyscoffee.official/" target="_blank" rel="noopener noreferrer" title="인스타그램 바로가기">인스타그램 아이콘</a></li>
+                        <li><a href="https://www.facebook.com/EnjoyHollys" target="_blank" rel="noopener noreferrer" title="페이스북 바로가기">페이스북 아이콘</a></li>
+                        <li><a href="https://m.blog.naver.com/PostList.nhn?blogId=hollyskr" target="_blank" rel="noopener noreferrer" title="네이버 블로그 바로가기">네이버 블로그 아이콘</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="./js/hollysVisual.js"></script> -->
+    <!-- <script src="./js/hollysMd.js"></script> -->
+    <!-- <script src="./js/hollysMenu.js"></script> -->
+</body>
+</html>
