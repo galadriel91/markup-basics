@@ -1,7 +1,8 @@
 (()=>{
     $('.mdSlide').slick({
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2500,
+        accessibility : true,
         infinite:true,
         arrows:false,
         slidesToShow: 4,
