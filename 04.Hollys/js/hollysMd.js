@@ -1,6 +1,6 @@
 (()=>{
     $('.mdSlide').slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2500,
         infinite:true,
         arrows:false,
