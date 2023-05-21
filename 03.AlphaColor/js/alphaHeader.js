@@ -49,6 +49,7 @@
     const responsiveButton = document.querySelector('.responsiveButton')
     const headerBottom = document.querySelector('.headerWrapBottom')
     const handleToggleBtn = () => {
+        NavList.forEach(v=>v.classList.remove(On))
         document.body.classList.toggle('open')
         headerBottom.classList.toggle('open')
     }
