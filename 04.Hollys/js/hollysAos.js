@@ -1,9 +1,11 @@
-AOS.init({
-    once: true,
-});
-
-window.addEventListener('resize' , ()=>{
-    setTimeout(()=>{
-        AOS.refresh()
-    },200)
-})
+(()=>{
+    AOS.init({
+        once: true,
+    });
+    
+    window.addEventListener('resize' , ()=>{
+        setTimeout(()=>{
+            AOS.refresh()
+        },200)
+    })
+})();

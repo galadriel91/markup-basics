@@ -47,17 +47,20 @@
     
     // 반응형 클릭시 네비게이션 메뉴 등장
     navOpenBtn.addEventListener('click' , ()=>{
+        document.body.classList.add('on')
         globalNav.classList.add('navOpen')
         navCloseBtn.classList.add('closeOn')
     })
     // 반응형 클릭시 네비게이션 메뉴 숨김
     navCloseBtn.addEventListener('click' , ()=>{
-        navCloseBtn.classList.remove('closeOn')
+        document.body.classList.remove('on')
         globalNav.classList.remove('navOpen')
+        navCloseBtn.classList.remove('closeOn')
     })
 
     const checkWindowSize = () =>{
         if(window.innerWidth > 1000){
+            document.body.classList.remove('on')
             navCloseBtn.classList.remove('closeOn')
             globalNav.classList.remove('navOpen')
         }
