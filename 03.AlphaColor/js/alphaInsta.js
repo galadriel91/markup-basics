@@ -1,5 +1,5 @@
 (()=>{
-    $('.instaVisual').slick({
+    const visual = $('.instaVisual').slick({
         autoplay: true,
         autoplaySpeed: 2500,
         arrows:false,
@@ -28,5 +28,7 @@
             },
         ]
     });
-    
+    visual.on('touchstart', e => {
+        visual.slick('slickPlay');
+    });
 })()

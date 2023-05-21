@@ -1,5 +1,5 @@
 (()=>{
-    $('.visualWrap').slick({
+    const visual = $('.visualWrap').slick({
         dots: true,
         autoplay: true,
         autoplaySpeed: 2500,
@@ -16,4 +16,7 @@
             $('.visualWrap').slick('slickPlay')
         },2000)
     })
+    visual.on('touchstart', e => {
+        visual.slick('slickPlay');
+    });
 })();
