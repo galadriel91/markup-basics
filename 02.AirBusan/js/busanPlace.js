@@ -1,6 +1,6 @@
 (()=>{
     $('.mainPlaceSlider').slick({
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2500,
         arrows:true,
         slidesToShow: 4,
