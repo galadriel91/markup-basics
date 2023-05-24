@@ -1,6 +1,6 @@
 (()=>{
-    const prev = document.querySelector('.today')
-    const next = document.querySelector('.tomorrow')
+    const prev = document.querySelectorAll('.today')
+    const next = document.querySelectorAll('.tomorrow')
     const days = ['일', '월', '화', '수', '목', '금', '토']
 
 
@@ -18,7 +18,12 @@
     }
 
 
-    prev.innerText = handleDay(today)
-    next.innerText = handleDay(tomorrow)
+    prev.forEach(v=>{
+        v.innerText = handleDay(today)
+    })
+
+    next.forEach(v=>{
+        v.innerText = handleDay(tomorrow)
+    })
 
 })()
