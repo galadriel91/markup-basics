@@ -42,12 +42,4 @@
             stopBtn.classList.replace('xi-angle-right-min', 'xi-pause')
         }
     })
-    stopBtn.addEventListener('mouseenter' , ()=>{
-        visual.slick('slickPause');
-    })
-    stopBtn.addEventListener('mouseleave' , ()=>{
-        if(stopBtn.classList.contains('xi-pause')){
-            visual.slick('slickPlay');
-        }
-    })
 })()
