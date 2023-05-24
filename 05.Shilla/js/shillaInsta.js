@@ -2,6 +2,7 @@
     $('.instaSlide').slick({
         autoplay: true,
         autoplaySpeed: 3000,
+        accessibility : true,
         arrows:false,
         slidesToShow: 5,
         slidesToScroll: 1,

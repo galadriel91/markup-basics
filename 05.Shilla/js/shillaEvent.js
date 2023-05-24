@@ -2,6 +2,7 @@
     $('.eventSlide').slick({
         autoplay: true,
         autoplaySpeed: 3000,
+        accessibility : true,
         arrows:false,
         slidesToShow: 3,
         slidesToScroll: 1,

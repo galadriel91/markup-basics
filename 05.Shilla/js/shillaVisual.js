@@ -4,6 +4,7 @@
         infinite: true,
         autoplay: true,
         autoplaySpeed: 4000,
+        accessibility : true,
         arrows: true,
         responsive: [
             {

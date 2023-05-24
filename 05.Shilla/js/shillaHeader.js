@@ -18,13 +18,15 @@
     const mobileMenu = document.querySelector('.mobileGnb')
     const handleMenu = () =>{ 
         if(menuBtn.classList.contains('xi-bars')){
-            menuBtn.classList.remove('xi-bars')
-            menuBtn.classList.add('xi-close')
+            // menuBtn.classList.remove('xi-bars')
+            // menuBtn.classList.add('xi-close')
+            menuBtn.classList.replace('xi-bars' , 'xi-close')
             mobileMenu.classList.add('on')
             document.body.classList.add('open')
         }else{
-            menuBtn.classList.remove('xi-close')
-            menuBtn.classList.add('xi-bars')
+            // menuBtn.classList.remove('xi-close')
+            // menuBtn.classList.add('xi-bars')
+            menuBtn.classList.replace('xi-close', 'xi-bars')
             mobileMenu.classList.remove('on')
             document.body.classList.remove('open')
         }
@@ -33,9 +35,11 @@
 
     const initMenu = () => {
         if(window.innerWidth > 900){
-            menuBtn.classList.remove('xi-close')
-            menuBtn.classList.add('xi-bars')
+            // menuBtn.classList.remove('xi-close')
+            // menuBtn.classList.add('xi-bars')
+            menuBtn.classList.replace('xi-close', 'xi-bars')
             mobileMenu.classList.remove('on')
+            document.body.classList.remove('open')
         }
     }
     initMenu()
