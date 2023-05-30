@@ -8,7 +8,7 @@
         arrows: true,
         responsive: [
             {
-                breakpoint: 961,
+                breakpoint: 1000,
                 settings: {
                     arrows:false
                 }
