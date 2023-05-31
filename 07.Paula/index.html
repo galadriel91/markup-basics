@@ -20,7 +20,7 @@
 <body>
     <a href="#main" class="skip">본문 바로가기</a>
     <a href="#footer" class="skip">기타정보 바로가기</a>
-    <header>
+    <header id="header" class="header">
         <div class="headerWrap">
             <h1><a href="javascript:;"><img src="./images/logo.gif" alt="폴라초이스 로고"></a></h1>
             <nav>
@@ -98,7 +98,7 @@
             <h2 class="hide">베스트 아이템</h2>
             <h3>Best Item</h3>
             <p class="subTitle">지금 베스트 제품과 신제품을 확인하세요.</p>
-            <ul>
+            <ul data-aos="fade-up" data-aos-duration="1000">
                 <li>
                     <a href="javasciprt:;">
                         <div class="imageBg">
@@ -174,8 +174,10 @@
         </section> 
         <section class="mainEvent">
             <h2 class="hide">이벤트 영역</h2>
-            <h3>Event</h3>
-            <p>지금 주목해야 할 이벤트.</p>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h3>Event</h3>
+                <p>지금 주목해야 할 이벤트.</p>
+            </div>
             <div class="eventSlide">
                 <div><a href="javasciprt:;"><img src="./images/banner1.png" alt="이벤트 배너 이미지"></a></div>
                 <div><a href="javasciprt:;"><img src="./images/banner2.webp" alt="이벤트 배너 이미지"></a></div>
@@ -187,8 +189,10 @@
         </section>
         <section class="mainReview">
             <h2 class="hide">고객 리뷰</h2>
-            <h3>Best Review</h3>
-            <p class="subTitle">생생한 베스트 리뷰를 확인해 보세요.</p>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h3>Best Review</h3>
+                <p class="subTitle">생생한 베스트 리뷰를 확인해 보세요.</p>
+            </div>
             <ul>
                 <li>
                     <a href="javasciprt:;">
@@ -307,8 +311,10 @@
         </section>
         <section class="mainEmphasis">
             <h2 class="hide">더 강조하고 싶은 제품 리스트</h2>
-            <h3>Beauty Pedia</h3>
-            <p class="subTitle">화장품 성분과 스킨케어에 대한 모든 것.</p>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                <h3>Beauty Pedia</h3>
+                <p class="subTitle">화장품 성분과 스킨케어에 대한 모든 것.</p>
+            </div>
             <ul class="emphaSlide">
                 <li tabindex="0">
                     <img src="./images/strong_item.jpg" alt="리지스트 데일리 5% 화장품 사진">
@@ -356,9 +362,11 @@
         </section>
         <section class="mainInsta">
             <h2 class="hide">인스타그램 영역</h2>
-            <h3>Instargram</h3>
-            <p>남들과는 차별화된 스마트한 <br class="responsive"/>스킨케어 스토리를 만나보세요.</p>
-            <span>@paulaschoice_kr</span>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                <h3>Instargram</h3>
+                <p>남들과는 차별화된 스마트한 <br class="responsive"/>스킨케어 스토리를 만나보세요.</p>
+                <span>@paulaschoice_kr</span>
+            </div>
             <ul class="instaVisual">
                 <li class="insta"><a href="javascript:;"><img src="./images/social1.jpg" alt="인스타그램 연계 이미지"></a></li>
                 <li class="insta"><a href="javascript:;"><img src="./images/social2.jpg" alt="인스타그램 연계 이미지"></a></li>
@@ -427,6 +435,7 @@
         </div>
     </footer>
     <script src="./js/paulaAos.js"></script>
+    <script src="./js/paulaHeader.js"></script>
     <script src="./js/paulaVisual.js"></script>
     <script src="./js/paulaEvent.js"></script>
     <script src="./js/paulaInsta.js"></script>
