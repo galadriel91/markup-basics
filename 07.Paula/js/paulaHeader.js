@@ -34,11 +34,6 @@
 
     const showingDepth = (e) => {
         // 리스트 클릭시 뎁스 아이템 등장
-        listItem.forEach(v=>{
-            if(v.classList.contains('showing')){
-                v.classList.remove('showing')
-            }
-        })
         let target = e.target
         while(target){
             if(target.classList.contains('listItem')){
@@ -47,7 +42,12 @@
                 target = target.parentNode
             }
         }
-        target.classList.add('showing')
+        if(target.classList.contains('showing')){
+            console.log(1)
+            target.classList.remove('showing')
+        }else{
+            target.classList.add('showing')
+        }
     }
 
     const checkWindowSize = () =>{
