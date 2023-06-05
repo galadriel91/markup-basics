@@ -26,6 +26,12 @@
         <div class="headerWrap">
             <h1><a href="#header"><img src="./images/logo.gif" alt="폴라초이스 로고"></a></h1>
             <nav class="desktopGnb">
+                <div class="responsive navJoin">
+                    <div>
+                        <a href="">로그인</a>
+                        <a href="">회원가입</a>
+                    </div>
+                </div>
                 <ul>
                     <li class="listItem">
                         <a href="javascript:;">
@@ -153,6 +159,15 @@
                         </div>
                     </li>
                 </ul>
+                <div class="responsive navService">
+                    <div>
+                        <a href="">마이페이지</a>
+                        <a href="">주문/배송조회</a>
+                        <a href="">관심상품</a>
+                        <a href="">쿠폰</a>
+                        <a href="">고객센터</a>
+                    </div>
+                </div>
             </nav>
             <ul class="service">
                 <li class="desk">
@@ -191,6 +206,46 @@
         </div>
     </div>
     <main id="main" class="main">
+        <section class="mainAll">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./images/whole.png" alt="전체상품 버튼">
+                        <span>전체상품</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/all1.png" alt="클렌저 이미지">
+                        <span>클렌저</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/all2.png" alt="토너 이미지">
+                        <span>토너</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/all3.png" alt="각질제거제 이미지">
+                        <span>각질제거제</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/all4.png" alt="선크림 이미지">
+                        <span>선크림</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/all5.png" alt="마스크팩 이미지">
+                        <span>마스크팩</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
         <section class="mainBest">
             <h2 class="hide">베스트 아이템</h2>
             <h3>Best Item</h3>
@@ -265,32 +320,32 @@
                     </a>
                 </li>
             </ul>
-            <a href="javasciprt:;" class="moreBtn">
+            <a href="javasciprt:;" class="moreBtn" data-aos="fade-up" data-aos-duration="1500">
                 <span>VIEW MORE</span>
             </a>
         </section> 
         <section class="mainEvent">
             <h2 class="hide">이벤트 영역</h2>
-            <div data-aos="fade-up" data-aos-duration="1000">
+            <div>
                 <h3>Event</h3>
                 <p>지금 주목해야 할 이벤트.</p>
             </div>
-            <div class="eventSlide">
+            <div class="eventSlide" data-aos="fade-up" data-aos-duration="1000">
                 <div><a href="javasciprt:;"><img src="./images/banner1.png" alt="이벤트 배너 이미지"></a></div>
                 <div><a href="javasciprt:;"><img src="./images/banner2.webp" alt="이벤트 배너 이미지"></a></div>
                 <div><a href="javasciprt:;"><img src="./images/banner3.webp" alt="이벤트 배너 이미지"></a></div>
             </div>
-            <a href="javasciprt:;" class="moreBtn">
+            <a href="javasciprt:;" class="moreBtn" data-aos="fade-up" data-aos-duration="1000">
                 <span>VIEW MORE</span>
             </a>
         </section>
         <section class="mainReview">
             <h2 class="hide">고객 리뷰</h2>
-            <div data-aos="fade-up" data-aos-duration="1000">
+            <div>
                 <h3>Best Review</h3>
                 <p class="subTitle">생생한 베스트 리뷰를 확인해 보세요.</p>
             </div>
-            <ul>
+            <ul data-aos="fade-up" data-aos-duration="1000">
                 <li>
                     <a href="javasciprt:;">
                         <div class="imageBg">
@@ -402,17 +457,17 @@
                     </a>
                 </li>
             </ul>
-            <a href="javascript:;" class="moreBtn">
+            <a href="javascript:;" class="moreBtn" data-aos="fade-up" data-aos-duration="1500">
                 <span>VIEW MORE</span>
             </a>
         </section>
         <section class="mainEmphasis">
             <h2 class="hide">더 강조하고 싶은 제품 리스트</h2>
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+            <div>
                 <h3>Beauty Pedia</h3>
                 <p class="subTitle">화장품 성분과 스킨케어에 대한 모든 것.</p>
             </div>
-            <ul class="emphaSlide">
+            <ul class="emphaSlide" data-aos="fade-up" data-aos-duration="1000">
                 <li tabindex="0">
                     <img src="./images/strong_item.jpg" alt="리지스트 데일리 5% 화장품 사진">
                     <div class="textWrap">
@@ -459,12 +514,12 @@
         </section>
         <section class="mainInsta">
             <h2 class="hide">인스타그램 영역</h2>
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+            <div>
                 <h3>Instargram</h3>
                 <p>남들과는 차별화된 스마트한 <br class="responsive"/>스킨케어 스토리를 만나보세요.</p>
                 <span>@paulaschoice_kr</span>
             </div>
-            <ul class="instaVisual">
+            <ul class="instaVisual" data-aos="fade-up" data-aos-duration="1000">
                 <li class="insta"><a href="javascript:;"><img src="./images/social1.jpg" alt="인스타그램 연계 이미지"></a></li>
                 <li class="insta"><a href="javascript:;"><img src="./images/social2.jpg" alt="인스타그램 연계 이미지"></a></li>
                 <li class="insta"><a href="javascript:;"><img src="./images/social3.jpg" alt="인스타그램 연계 이미지"></a></li>
