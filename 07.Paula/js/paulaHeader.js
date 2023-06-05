@@ -73,12 +73,14 @@
     checkWindowSize()
 
     const handleResize = () => {
-        openBtn.classList.replace('xi-close', 'xi-bars')
-        openBtn.classList.remove('active')
-        desktopGnb.classList.remove('open')
-        blockWrap.classList.remove('open')
-        document.body.classList.remove('open')
-        checkWindowSize()
+        if(window.innerWidth >= 1400){
+            openBtn.classList.replace('xi-close', 'xi-bars')
+            openBtn.classList.remove('active')
+            desktopGnb.classList.remove('open')
+            blockWrap.classList.remove('open')
+            document.body.classList.remove('open')
+            checkWindowSize()
+        }
     }
 
 
