@@ -5,30 +5,42 @@
     let first = 0
 
     const handleHeader = () => {
+    //  스크롤 아래로 내릴시 fixed 부여
         if(window.scrollY >= 120){
             header.classList.add('fixed')
         }else{
             header.classList.remove('fixed')
         }
     }
+
     const openBtn = document.querySelector('.openBtn')
     const desktopGnb = document.querySelector('.desktopGnb')
     const blockWrap = document.querySelector('.blockWrap')
 
+
+    const openMenu = () => {
+        openBtn.classList.replace('xi-bars' , 'xi-close')
+        openBtn.classList.add('active')
+        desktopGnb.classList.add('open')
+        blockWrap.classList.add('open')
+        document.body.classList.add('open')
+    }
+
+    const offMenu = () => {
+        openBtn.classList.replace('xi-close', 'xi-bars')
+        openBtn.classList.remove('active')
+        desktopGnb.classList.remove('open')
+        blockWrap.classList.remove('open')
+        document.body.classList.remove('open')
+    }
+
+
     const handleMenu = () => {
         // 메뉴 버튼 클릭시
         if(openBtn.classList.contains('xi-bars')){
-            openBtn.classList.replace('xi-bars' , 'xi-close')
-            openBtn.classList.add('active')
-            desktopGnb.classList.add('open')
-            blockWrap.classList.add('open')
-            document.body.classList.add('open')
+            openMenu()
         }else{
-            openBtn.classList.replace('xi-close', 'xi-bars')
-            openBtn.classList.remove('active')
-            desktopGnb.classList.remove('open')
-            blockWrap.classList.remove('open')
-            document.body.classList.remove('open')
+            offMenu()
         }
     }
 
@@ -43,7 +55,6 @@
             }
         }
         if(target.classList.contains('showing')){
-            console.log(1)
             target.classList.remove('showing')
         }else{
             target.classList.add('showing')
@@ -54,6 +65,7 @@
         // 1453px 보다 작을시 이벤트 부여
         if(window.innerWidth <= 1453){
             listItem.forEach(v=>v.addEventListener('click' , showingDepth))
+            // 첫 로딩시 실행 방지를 위한 first
             first = 1
         }else{
             // 커지면 이벤트 제거
@@ -67,23 +79,16 @@
                 }
             })
             title.focus()
-            first = 0
         }
     }
     checkWindowSize()
 
     const handleResize = () => {
-        if(window.innerWidth >= 1400){
-            openBtn.classList.replace('xi-close', 'xi-bars')
-            openBtn.classList.remove('active')
-            desktopGnb.classList.remove('open')
-            blockWrap.classList.remove('open')
-            document.body.classList.remove('open')
-            checkWindowSize()
+        checkWindowSize()
+        if(window.innerWidth >= 1453){
+            offMenu()
         }
     }
-
-
 
     openBtn.addEventListener('click' , handleMenu)
     window.addEventListener('scroll', handleHeader)
